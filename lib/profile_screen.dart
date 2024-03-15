@@ -1,4 +1,6 @@
-import 'package:flutter/widgets.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_firebase/injection_container.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
@@ -8,9 +10,22 @@ class ProfileScreen extends StatefulWidget {
 }
 
 class _ProfileScreen extends State<ProfileScreen> {
+  final firebaseAuth = sl<FirebaseAuth>();
+
   @override
   Widget build(BuildContext context) {
-    return const Column(mainAxisAlignment: MainAxisAlignment.center);
+    return Scaffold(
+        body: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        const Text('Profile Screen'),
+        TextButton(
+            onPressed: () {
+              firebaseAuth.signOut();
+            },
+            child: const Text('Logout'))
+      ],
+    ));
   }
 
   // ···

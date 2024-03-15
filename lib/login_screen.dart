@@ -1,6 +1,7 @@
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+import 'package:flutter_firebase/injection_container.dart';
 import 'package:go_router/go_router.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -17,7 +18,9 @@ class _LoginScreen extends State<LoginScreen> {
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
 
-  final firebaseAuth = FirebaseAuth.instance;
+  final firebaseAuth =  sl<FirebaseAuth>();
+
+  
 
   @override
   Widget build(BuildContext context) {
@@ -46,9 +49,18 @@ class _LoginScreen extends State<LoginScreen> {
                   email: emailController.text,
                   password: passwordController.text);
 
+              
+
               GoRouter.of(context).go('/profile_screen');
             },
-            child: Text('Login'),
+            child: const Text('Login'),
+          ),
+          TextButton(
+            onPressed: () {
+              
+              context.go('/register_screen');
+            },
+            child: const Text('Register'),
           )
         ],
       ),
