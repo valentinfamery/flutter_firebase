@@ -23,6 +23,7 @@ class Routes {
           if (loggedIn) {
             return '/profile_screen';
           }
+          return null;
         },
       ),
       GoRoute(
@@ -43,6 +44,7 @@ class Routes {
           if (!loggedIn) {
             return '/login_screen';
           }
+          return null;
         },
       ),
     ],

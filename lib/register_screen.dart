@@ -2,7 +2,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase/injection_container.dart';
-import 'package:flutter_firebase/models/user_firestore.dart';
 import 'package:flutter_firebase/repository/UserRepository.dart';
 import 'package:go_router/go_router.dart';
 
@@ -62,6 +61,7 @@ class _RegisterScreen extends State<RegisterScreen> {
               await userRepository.addUserToFirebase(fullNameController.text,
                   emailController.text, passwordController.text);
 
+              // ignore: use_build_context_synchronously
               context.go('/profile_screen');
             },
             child: const Text('Register'),

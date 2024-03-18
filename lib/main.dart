@@ -15,12 +15,19 @@ Future<void> main() async {
 
   FirebaseAuth firebaseAuth = sl<FirebaseAuth>();
 
-
   firebaseAuth.authStateChanges().listen((User? user) {
     router.refresh();
   });
 
-  
+  //final client = StreamChatClient(
+//:'6azt4kgs3gtd',
+  //logLevel: Level.INFO,
+  //);
+
+  //await client.connectUser(
+  //User(id: firebaseAuth.currentUser!.uid),
+  //'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiTzk3OHNxcHZOcFVnMkNscVVqTUhYU2JBclNCMiJ9.lKTT9GYvXVuK4wWjoQxZGW5YeGQj48POVnqsLyWN_dU',
+  //);
 
   runApp(MainApp(router: router));
 }

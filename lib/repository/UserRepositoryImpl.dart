@@ -1,6 +1,6 @@
+// ignore: file_names
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter_firebase/models/user_firestore.dart';
 import 'package:flutter_firebase/repository/UserRepository.dart';
 
 class UserRepositoryImpl implements UserRepository {
@@ -17,10 +17,18 @@ class UserRepositoryImpl implements UserRepository {
     await firebaseAuth.createUserWithEmailAndPassword(
         email: email, password: password);
 
-    await users.add({
+    await users.doc(firebaseAuth.currentUser?.uid).set({
       'id': firebaseAuth.currentUser?.uid,
       'fullName': fullName, // John Doe
       'email': email,
     });
+  }
+
+  @override
+  Stream<DocumentSnapshot> getUserFirebase() {
+    return firebaseFirestore
+        .collection('users')
+        .doc(firebaseAuth.currentUser?.uid)
+        .snapshots();
   }
 }
