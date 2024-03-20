@@ -325,10 +325,10 @@ packages:
     dependency: transitive
     description:
       name: file_picker
-      sha256: be325344c1f3070354a1d84a231a1ba75ea85d413774ec4bdf444c023342e030
+      sha256: caa6bc229eab3e32eb2f37b53a5f9d22a6981474afd210c512a7546c1e1a04f6
       url: "https://pub.dev"
     source: hosted
-    version: "5.5.0"
+    version: "6.2.0"
   file_selector:
     dependency: transitive
     description:
@@ -481,6 +481,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.8.0"
+  fixnum:
+    dependency: transitive
+    description:
+      name: fixnum
+      sha256: "25517a4deb0c03aa0f32fd12db525856438902d9c16536311e76cdc57b31d7d1"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.0"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -568,6 +576,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "13.2.1"
+  hashcodes:
+    dependency: transitive
+    description:
+      name: hashcodes
+      sha256: "80f9410a5b3c8e110c4b7604546034749259f5d6dcca63e0d3c17c9258f1a651"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0"
   html:
     dependency: transitive
     description:
@@ -664,6 +680,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.2.1+1"
+  image_size_getter:
+    dependency: transitive
+    description:
+      name: image_size_getter
+      sha256: "75befb508dd28845d4b276654a8420be3d7458b8424e943ee84bbfe7c2c052e0"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.1.2"
   intl:
     dependency: transitive
     description:
@@ -748,10 +772,10 @@ packages:
     dependency: transitive
     description:
       name: lottie
-      sha256: a93542cc2d60a7057255405f62252533f8e8956e7e06754955669fd32fb4b216
+      sha256: ce2bb2605753915080e4ee47f036a64228c88dc7f56f7bc1dbe912d75b55b1e2
       url: "https://pub.dev"
     source: hosted
-    version: "2.7.0"
+    version: "3.1.0"
   markdown:
     dependency: transitive
     description:
@@ -905,13 +929,13 @@ packages:
     source: hosted
     version: "6.0.2"
   photo_manager:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: photo_manager
-      sha256: "2d698826421ebd045ecc0df60422e9dd24bd22b178310b68444385f783735b55"
+      sha256: df594f989f0c31cdb3ed48f3d49cb9ffadf11cc3700d2c3460b1912c93432621
       url: "https://pub.dev"
     source: hosted
-    version: "2.8.1"
+    version: "3.0.0"
   photo_view:
     dependency: transitive
     description:
@@ -1013,6 +1037,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.10.0"
+  sprintf:
+    dependency: transitive
+    description:
+      name: sprintf
+      sha256: "1fc9ffe69d4df602376b52949af107d8f5703b77cda567c4d7d86a0693120f23"
+      url: "https://pub.dev"
+    source: hosted
+    version: "7.0.0"
   sqflite:
     dependency: transitive
     description:
@@ -1065,34 +1097,34 @@ packages:
     dependency: "direct main"
     description:
       name: stream_chat
-      sha256: "62117b66395ec60d9fdf71a137ea916d3a5536347fff3eefee47e09933334588"
+      sha256: "75869d9e9d189398d1d3d090d204d35259adb224438ede2ed0345fa84d1403c8"
       url: "https://pub.dev"
     source: hosted
-    version: "6.10.0"
+    version: "7.1.0"
   stream_chat_flutter:
     dependency: "direct main"
     description:
       name: stream_chat_flutter
-      sha256: "0286ef445645d7f6af74bdc2a5dd7664269336dd1d0f4b1d2b84c58aab8cbf77"
+      sha256: f03196d8cfc472dd438e2b5b2c068316981bd9a2a25f1799f5aaf17401244b33
       url: "https://pub.dev"
     source: hosted
-    version: "6.12.0"
+    version: "7.1.0"
   stream_chat_flutter_core:
     dependency: "direct main"
     description:
       name: stream_chat_flutter_core
-      sha256: af11103151644002a42c3338d828b2dc54036b390c15ed7cefb1a84be565067e
+      sha256: b3f28a663a93e9e3fc0e672058306ca4a967f17c26ddc9ad46577c7837c3622e
       url: "https://pub.dev"
     source: hosted
-    version: "6.11.0"
+    version: "7.1.0"
   stream_chat_persistence:
     dependency: "direct main"
     description:
       name: stream_chat_persistence
-      sha256: "84dcc057d655998e9a6c222ebb7e651bb5e46384584fff8d582ff81f254b82f0"
+      sha256: f0b71318681593bc646d6ef80a7bcd71f9f4a2e1cb8da115b8706619da596982
       url: "https://pub.dev"
     source: hosted
-    version: "6.10.0"
+    version: "7.1.0"
   string_scanner:
     dependency: transitive
     description:
@@ -1233,10 +1265,10 @@ packages:
     dependency: transitive
     description:
       name: uuid
-      sha256: "648e103079f7c64a36dc7d39369cabb358d377078a051d6ae2ad3aa539519313"
+      sha256: cd210a09f7c18cbe5a02511718e0334de6559871052c90a90c0cca46a4aa81c8
       url: "https://pub.dev"
     source: hosted
-    version: "3.0.7"
+    version: "4.3.3"
   vector_graphics:
     dependency: transitive
     description:
